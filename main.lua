@@ -5,14 +5,12 @@ display.setStatusBar( display.HiddenStatusBar )
 local storyboard = require "storyboard"
 local larguraTela = display.contentWidth;
 local alturaTela = display.contentHeight;
-local bg1 = display.newImage("imagens/sky.png", true)
+local bg1 = display.newImage("imagens/sky1.png", true)
 bg1.x = larguraTela/2; 
-bg1.y = alturaTela/2;
+bg1.y = 350;
 
-local jogar = display.newImage ("imagens/btn_arrow.png")
-jogar.x = larguraTela/2; jogar.y = alturaTela/2;
-jogar.rotation = 270
-
+local jogar = display.newImage ("imagens/iniciar.png")
+jogar.x = larguraTela/2; jogar.y = 400;
 
 
 function jogar:touch(event)
